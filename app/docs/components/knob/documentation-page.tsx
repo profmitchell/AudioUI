@@ -359,9 +359,21 @@ import { START_ANGLE, ROTATION_RANGE, angleFromValue } from "./dial/constants"
           <h2 className="text-xl font-bold text-white mb-4">Usage</h2>
 
           <div className="space-y-6">
+            <div className="bg-black/40 backdrop-blur-md rounded-2xl border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.1)] p-6">
+              <h3 className="text-lg font-medium text-white mb-3">Import</h3>
+              <div className="relative">
+                <button
+                  className="absolute top-2 right-2 p-1.5 rounded-md bg-white/5 hover:bg-white/10 transition-colors duration-200"
+                  onClick={() => copyToClipboard(`import { Dial } from "audioui"`, "import-code")}
+                >
+                  {copied === "import-code" ? <Check size={16} /> : <Copy size={16} />}
+                </button>
+                <pre className="bg-black/60 rounded-lg p-4 overflow-x-auto text-white/80 text-sm">
+                  {`import { Dial } from "audioui"`}
+                </pre>
               </div>
             </div>
-
+            
             <div className="bg-black/40 backdrop-blur-md rounded-2xl border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.1)] p-6">
               <h3 className="text-lg font-medium text-white mb-3">Basic Example</h3>
               <div className="relative">
