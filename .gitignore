@@ -1,0 +1,77 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Production
+build/
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# IDE files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+*.sublime-*
+
+# Cache
+.eslintcache
+.npm
+
+# TypeScript
+*.tsbuildinfo
+
+# Audio files (often too large for Git)
+*.wav
+*.mp3
+*.aiff
+*.aif
+*.ogg
+*.flac
+
+# JUCE-specific items to ignore at root level
+**/*.jucecache
+
+# macOS specific
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# Logs
+logs
+*.log
