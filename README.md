@@ -235,7 +235,59 @@ Special thanks to the JUCE team for creating the WebView feature that makes this
 
 ## 🤝 Contributing
 
-We welcome contributions to AudioUI! Whether it's new components, bug fixes, or documentation improvements.
+We welcome contributions to AudioUI! Whether it's new components, bug fixes, or documentation improvements, your help is greatly appreciated.
+
+### Getting Started with Contributions
+
+1. **Fork the repository** on GitHub
+2. **Clone your fork** locally:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/AudioUI.git
+   cd AudioUI
+   ```
+3. **Create your feature branch**:
+
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+4. **Commit your changes** with descriptive commit messages:
+
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+5. **Push to the branch**:
+
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+6. **Open a Pull Request** on GitHub
+
+### Contribution Guidelines
+
+We have comprehensive documentation for contributors:
+
+- [Detailed Contributing Guidelines](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+
+### Component Contributions
+
+Contributing a new audio component? Ensure it meets these criteria:
+
+- Accessible (keyboard navigable, ARIA compliant)
+- Mobile responsive
+- Well-documented with clear prop interfaces
+- Includes basic tests
+- Follows AudioUI's design system
+
+### Documentation Contributions
+
+Documentation improvements are just as valuable as code! Consider:
+
+- Adding usage examples
+- Creating tutorials
+- Improving component documentation
+- Fixing typos and clarifying instructions
 
 1. Fork the repository
 2. Create your feature branch: `git checkout -b feature/amazing-feature`
