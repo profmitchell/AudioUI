@@ -3,8 +3,23 @@
 [![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)](https://www.npmjs.com/package/audioui)
 [![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)](https://github.com/profmitchell/AudioUI/blob/main/LICENSE)
 [![GitHub](https://img.shields.io/github/stars/profmitchell/AudioUI?style=social)](https://github.com/profmitchell/AudioUI)
+<div align="center">
+  <img width="600" alt="AudioUI Overview" src="https://github.com/user-attachments/assets/2e36a122-af19-453d-af62-f96e3b3852d8" />
+</div>
+
 
 Modern, accessible audio interface components for React applications
+## Component Gallery
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px;">
+  <img width="300" alt="Component Example 1" src="https://github.com/user-attachments/assets/c8f8f698-60e4-4f0c-b279-31eb8ad71325" />
+  <img width="300" alt="Component Example 2" src="https://github.com/user-attachments/assets/b1cb8595-ea02-4a27-9249-f8689911b3a0" />
+  <img width="300" alt="Component Example 3" src="https://github.com/user-attachments/assets/738aed4a-69c5-4884-892b-9fdf160dad8a" />
+  <img width="300" alt="Component Example 4" src="https://github.com/user-attachments/assets/a4cdac42-cbb9-4ec4-973a-a3b3c6a60de5" />
+  <img width="300" alt="Component Example 5" src="https://github.com/user-attachments/assets/2bf92985-a4a4-4732-bb10-3eb9240b4d48" />
+</div>
+
 
 ## Installation
 
