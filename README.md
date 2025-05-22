@@ -1,22 +1,9 @@
-# AudioUI Documentation Site
+# AudioUI
 
-This is the official documentation site for AudioUI, a collection of high-quality audio interface components built with React and Tailwind CSS. This repository contains only the documentation site, separated from the studio components.
+![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)
+![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)
 
-## Getting Started
-
-Follow these<div align="center">
-  <h1>AudioUI</h1>
-  <p>Modern, accessible audio interface components for React applications</p>
-
-  <div>
-    <a href="https://www.npmjs.com/package/audioui">
-      <img src="https://img.shields.io/npm/v/audioui.svg?style=flat" alt="npm version" />
-    </a>
-    <a href="https://github.com/profmitchell/AudioUI/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/profmitchell/AudioUI" alt="MIT License" />
-    </a>
-  </div>
-</div>
+Modern, accessible audio interface components for React applications
 
 ## Overview
 
