@@ -1,6 +1,6 @@
 # AudioUI
 
-### Modern, accessible audio interface components for React applications
+Modern, accessible audio interface components for React applications
 
 [![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)](https://www.npmjs.com/package/audioui)
 [![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)](https://github.com/profmitchell/AudioUI/blob/main/LICENSE)
