@@ -59,6 +59,7 @@ AudioUI is a comprehensive library of React components specifically designed for
 - 🎨 **Customizable**: Easily themeable to match your application's design system
 - ⚡ **Optimized**: High-performance components with minimal re-renders for low-latency audio applications
 - 🔌 **Framework Agnostic**: Works with any React-based project, including Next.js, Remix, and more
+- 🎚️ **JUCE Integration**: Ready-to-use starter template for integrating with JUCE 8's WebView feature
 
 ## Quick Start
 
@@ -173,6 +174,43 @@ function AudioProcessor() {
   );
 }
 ```
+
+## 🎚️ JUCE Integration - AudioUIJUCEStarterTemplate
+
+AudioUI provides a starter template for integrating with JUCE 8's WebView feature, allowing you to build audio plugins with React-based UIs.
+
+### Key Features
+
+- JUCE 8 audio processing backend with C++
+- React frontend for modern UI development
+- Hot-reloading capability for rapid UI development
+- Seamless communication between C++ and JavaScript
+- Cross-platform compatibility
+
+### Getting Started
+
+```bash
+# Clone the starter template
+git clone https://github.com/profmitchell/AudioUIJUCEStarterTemplate
+
+# Set up the React frontend
+cd AudioUIJUCEStarterTemplate/frontend
+npm install
+npm start
+```
+
+Open the JUCE project in your IDE (Xcode/Visual Studio), build and run it. The application will automatically connect to the React development server and display your UI with hot-reloading support.
+
+[View JUCE Starter Template →](https://github.com/profmitchell/AudioUIJUCEStarterTemplate)
+
+### Resources for JUCE WebView Development
+
+- [JUCE 8 WebView UIs Documentation](https://juce.com/blog/juce-8-feature-overview-webview-uis/) - Official documentation from JUCE about the WebView feature
+- [JUCE WebView Tutorial by Jan Wilczek](https://github.com/JanWilczek/juce-webview-tutorial) - Excellent step-by-step tutorial on integrating WebViews with JUCE
+
+### Acknowledgments
+
+Special thanks to the JUCE team for creating the WebView feature that makes this integration possible, and to Jan Wilczek for his invaluable tutorial that helped shape our implementation approach.
 
 ## 📂 Project Structure
 

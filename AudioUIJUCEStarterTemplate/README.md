@@ -83,6 +83,11 @@ This project is based on the JUCE framework examples and follows their licensing
 ## Resources
 
 - [JUCE 8 WebView UIs Documentation](https://juce.com/blog/juce-8-feature-overview-webview-uis/)
+- [JUCE WebView Tutorial by Jan Wilczek](https://github.com/JanWilczek/juce-webview-tutorial) - Excellent step-by-step tutorial on integrating WebViews with JUCE
 - [React Documentation](https://react.dev/)
 - [AudioUI Component Library](https://github.com/profmitchell/AudioUI) - Modern, accessible audio interface components for React
 - [AudioUI Documentation](https://profmitchell.github.io/AudioUI/) - Documentation for the AudioUI component library
+
+## Acknowledgments
+
+Special thanks to the JUCE team for creating the WebView feature that makes this integration possible, and to Jan Wilczek for his invaluable tutorial that helped shape this implementation approach.
