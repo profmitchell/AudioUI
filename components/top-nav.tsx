@@ -41,16 +41,10 @@ export function TopNav() {
         </div>
 
         <div className="flex items-center gap-2 md:gap-4">
-          <Button variant="ghost" size="sm" className="glass glass-hover hidden md:flex" asChild>
-            <Link href="https://github.com/audioui/components">
-              <Github className="h-4 w-4 mr-2" />
-              GitHub
-            </Link>
-          </Button>
           <Button variant="ghost" size="sm" className="glass glass-hover" asChild>
-            <Link href="/studio">
-              <ExternalLink className="h-4 w-4 md:mr-2" />
-              <span className="hidden md:inline">Studio</span>
+            <Link href="https://github.com/profmitchell/AudioUI" target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4 mr-2" />
+              <span className="hidden md:inline">GitHub</span>
             </Link>
           </Button>
         </div>
