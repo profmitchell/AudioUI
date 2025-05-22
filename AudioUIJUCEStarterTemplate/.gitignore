@@ -1,0 +1,100 @@
+# JUCE specific
+Builds/
+JuceLibraryCode/
+*.jucecache
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# IDE specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+xcuserdata/
+*.xcworkspace
+*.pbxuser
+*.perspectivev3
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Build artifacts
+*.o
+*.obj
+*.d
+*.map
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.dylib
+*.so
+*.a
+*.lib
+*.out
+*.app
+
+# Dependency directories (for frontend)
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Frontend build outputs
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/out/
+
+# Frontend logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Frontend local env files
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Frontend cache
+frontend/.npm
+frontend/.eslintcache
+frontend/.vercel
+frontend/.turbo
+
+# Audio files often too large for git
+*.wav
+*.mp3
+*.aif
+*.aiff
+*.ogg
+*.flac
+
+# Temporary files
+*.tmp
+*.temp
+*~

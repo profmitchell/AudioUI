@@ -1,0 +1,155 @@
+/**
+ * AudioUI Theming System
+ * 
+ * This file contains CSS variables for consistent theming across AudioUI components.
+ * It follows the design principles outlined in BESTPRACTICES.md:
+ * - Using CSS variables for theming
+ * - Defining a consistent color palette
+ * - Allowing easy overrides
+ */
+
+:root {
+  /* Primary Color Scale */
+  --audioui-primary-50: rgb(245, 245, 255);
+  --audioui-primary-100: rgb(235, 235, 255);
+  --audioui-primary-200: rgb(213, 213, 255);
+  --audioui-primary-300: rgb(179, 179, 255);
+  --audioui-primary-400: rgb(128, 128, 250);
+  --audioui-primary-500: rgb(96, 96, 245);
+  --audioui-primary-600: rgb(64, 64, 235);
+  --audioui-primary-700: rgb(43, 43, 210);
+  --audioui-primary-800: rgb(32, 32, 185);
+  --audioui-primary-900: rgb(21, 21, 145);
+  --audioui-primary-950: rgb(10, 10, 105);
+
+  /* Accent Color Scale - Purple */
+  --audioui-accent-50: rgb(250, 245, 255);
+  --audioui-accent-100: rgb(243, 232, 255);
+  --audioui-accent-200: rgb(233, 213, 255);
+  --audioui-accent-300: rgb(216, 180, 254);
+  --audioui-accent-400: rgb(192, 132, 252);
+  --audioui-accent-500: rgb(168, 85, 247);
+  --audioui-accent-600: rgb(147, 51, 234);
+  --audioui-accent-700: rgb(126, 34, 206);
+  --audioui-accent-800: rgb(107, 33, 168);
+  --audioui-accent-900: rgb(88, 28, 135);
+  --audioui-accent-950: rgb(59, 7, 100);
+
+  /* Neutral Colors */
+  --audioui-neutral-50: rgb(250, 250, 250);
+  --audioui-neutral-100: rgb(245, 245, 245);
+  --audioui-neutral-200: rgb(229, 229, 229);
+  --audioui-neutral-300: rgb(212, 212, 212);
+  --audioui-neutral-400: rgb(163, 163, 163);
+  --audioui-neutral-500: rgb(115, 115, 115);
+  --audioui-neutral-600: rgb(82, 82, 82);
+  --audioui-neutral-700: rgb(64, 64, 64);
+  --audioui-neutral-800: rgb(38, 38, 38);
+  --audioui-neutral-900: rgb(23, 23, 23);
+  --audioui-neutral-950: rgb(10, 10, 10);
+
+  /* Semantic Colors */
+  --audioui-success: rgb(34, 197, 94);
+  --audioui-warning: rgb(234, 179, 8);
+  --audioui-error: rgb(239, 68, 68);
+  --audioui-info: rgb(59, 130, 246);
+
+  /* Component Specific Colors */
+  --audioui-track-bg: rgba(255, 255, 255, 0.1);
+  --audioui-value-color: var(--audioui-primary-500);
+  --audioui-indicator-color: white;
+  --audioui-glow-color: rgba(96, 96, 245, 0.5);
+  --audioui-label-color: white;
+  --audioui-track-color: rgba(255, 255, 255, 0.1);
+
+  /* Transparency Levels */
+  --audioui-opacity-low: 0.1;
+  --audioui-opacity-medium: 0.5;
+  --audioui-opacity-high: 0.8;
+
+  /* Component Sizes */
+  --audioui-size-xxs: 16px;
+  --audioui-size-xs: 24px;
+  --audioui-size-sm: 32px;
+  --audioui-size-md: 48px;
+  --audioui-size-lg: 64px;
+  --audioui-size-xl: 80px;
+  --audioui-size-xxl: 96px;
+
+  /* Spacing */
+  --audioui-spacing-xxs: 2px;
+  --audioui-spacing-xs: 4px;
+  --audioui-spacing-sm: 8px;
+  --audioui-spacing-md: 12px;
+  --audioui-spacing-lg: 16px;
+  --audioui-spacing-xl: 24px;
+  --audioui-spacing-xxl: 32px;
+
+  /* Typography */
+  --audioui-font-size-xs: 0.75rem;
+  --audioui-font-size-sm: 0.875rem;
+  --audioui-font-size-md: 1rem;
+  --audioui-font-size-lg: 1.125rem;
+  --audioui-font-size-xl: 1.25rem;
+  
+  /* Animation Timing */
+  --audioui-transition-fast: 100ms;
+  --audioui-transition-medium: 200ms;
+  --audioui-transition-slow: 300ms;
+
+  /* Border Radius */
+  --audioui-radius-sm: 4px;
+  --audioui-radius-md: 8px;
+  --audioui-radius-lg: 12px;
+  --audioui-radius-xl: 16px;
+  --audioui-radius-full: 9999px;
+}
+
+/* Dark Theme Overrides */
+.audioui-dark {
+  --audioui-track-bg: rgba(0, 0, 0, 0.3);
+  --audioui-value-color: var(--audioui-primary-400);
+  --audioui-label-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Light Theme Overrides */
+.audioui-light {
+  --audioui-track-bg: rgba(0, 0, 0, 0.1);
+  --audioui-value-color: var(--audioui-primary-600);
+  --audioui-label-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Theme Variations - Preset Themes */
+.audioui-theme-neon {
+  --audioui-primary-500: rgb(10, 255, 100);
+  --audioui-accent-500: rgb(255, 50, 200);
+  --audioui-glow-color: rgba(10, 255, 100, 0.5);
+}
+
+.audioui-theme-vintage {
+  --audioui-primary-500: rgb(241, 161, 75);
+  --audioui-accent-500: rgb(180, 92, 40);
+  --audioui-track-bg: rgba(120, 80, 40, 0.3);
+}
+
+.audioui-theme-midnight {
+  --audioui-primary-500: rgb(38, 50, 100);
+  --audioui-accent-500: rgb(72, 28, 107);
+  --audioui-value-color: rgb(100, 150, 255);
+  --audioui-glow-color: rgba(72, 28, 107, 0.5);
+}
+
+.audioui-theme-sunset {
+  --audioui-primary-500: rgb(255, 100, 50);
+  --audioui-accent-500: rgb(255, 50, 150);
+  --audioui-glow-color: rgba(255, 100, 50, 0.5);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion) {
+  :root {
+    --audioui-transition-fast: 0ms;
+    --audioui-transition-medium: 0ms;
+    --audioui-transition-slow: 0ms;
+  }
+} 

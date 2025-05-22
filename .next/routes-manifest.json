@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "/AudioUI",
+  "redirects": [
+    {
+      "source": "/AudioUI/",
+      "destination": "/AudioUI",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/AudioUI/$"
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/docs/components/XYPad",
+      "regex": "^/docs/components/XYPad(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/XYPad(?:/)?$"
+    },
+    {
+      "page": "/docs/components/adsr-envelope",
+      "regex": "^/docs/components/adsr\\-envelope(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/adsr\\-envelope(?:/)?$"
+    },
+    {
+      "page": "/docs/components/drum-pad",
+      "regex": "^/docs/components/drum\\-pad(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/drum\\-pad(?:/)?$"
+    },
+    {
+      "page": "/docs/components/filter",
+      "regex": "^/docs/components/filter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/filter(?:/)?$"
+    },
+    {
+      "page": "/docs/components/knob",
+      "regex": "^/docs/components/knob(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/knob(?:/)?$"
+    },
+    {
+      "page": "/docs/components/knob-specular",
+      "regex": "^/docs/components/knob\\-specular(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/knob\\-specular(?:/)?$"
+    },
+    {
+      "page": "/docs/components/meter-arc",
+      "regex": "^/docs/components/meter\\-arc(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/meter\\-arc(?:/)?$"
+    },
+    {
+      "page": "/docs/components/modulation-wheel",
+      "regex": "^/docs/components/modulation\\-wheel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/modulation\\-wheel(?:/)?$"
+    },
+    {
+      "page": "/docs/components/pitch-bend-wheel",
+      "regex": "^/docs/components/pitch\\-bend\\-wheel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/pitch\\-bend\\-wheel(?:/)?$"
+    },
+    {
+      "page": "/docs/components/preset-browser",
+      "regex": "^/docs/components/preset\\-browser(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/preset\\-browser(?:/)?$"
+    },
+    {
+      "page": "/docs/components/slider-ethereal",
+      "regex": "^/docs/components/slider\\-ethereal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/components/slider\\-ethereal(?:/)?$"
+    },
+    {
+      "page": "/docs/installation",
+      "regex": "^/docs/installation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/installation(?:/)?$"
+    },
+    {
+      "page": "/docs/introduction",
+      "regex": "^/docs/introduction(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/introduction(?:/)?$"
+    },
+    {
+      "page": "/examples",
+      "regex": "^/examples(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/examples(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": {
+    "beforeFiles": [
+      {
+        "source": "/AudioUI//_next/:path+",
+        "destination": "/AudioUI/_next/:path+",
+        "regex": "^/AudioUI//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
+    "afterFiles": [],
+    "fallback": []
+  }
+}

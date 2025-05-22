@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/docs/components/drum-pad/page": "app/docs/components/drum-pad/page.js",
+  "/docs/components/adsr-envelope/page": "app/docs/components/adsr-envelope/page.js",
+  "/docs/components/XYPad/page": "app/docs/components/XYPad/page.js",
+  "/docs/components/knob/page": "app/docs/components/knob/page.js",
+  "/docs/components/filter/page": "app/docs/components/filter/page.js",
+  "/docs/components/meter-arc/page": "app/docs/components/meter-arc/page.js",
+  "/docs/components/modulation-wheel/page": "app/docs/components/modulation-wheel/page.js",
+  "/docs/components/knob-specular/page": "app/docs/components/knob-specular/page.js",
+  "/docs/components/pitch-bend-wheel/page": "app/docs/components/pitch-bend-wheel/page.js",
+  "/docs/installation/page": "app/docs/installation/page.js",
+  "/docs/components/preset-browser/page": "app/docs/components/preset-browser/page.js",
+  "/docs/introduction/page": "app/docs/introduction/page.js",
+  "/docs/components/slider-ethereal/page": "app/docs/components/slider-ethereal/page.js",
+  "/page": "app/page.js",
+  "/examples/page": "app/examples/page.js"
+}

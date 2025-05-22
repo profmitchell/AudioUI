@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/docs/components/drum-pad/page": "/docs/components/drum-pad",
+  "/docs/components/adsr-envelope/page": "/docs/components/adsr-envelope",
+  "/docs/components/XYPad/page": "/docs/components/XYPad",
+  "/docs/components/knob/page": "/docs/components/knob",
+  "/docs/components/filter/page": "/docs/components/filter",
+  "/docs/components/meter-arc/page": "/docs/components/meter-arc",
+  "/docs/components/modulation-wheel/page": "/docs/components/modulation-wheel",
+  "/docs/components/knob-specular/page": "/docs/components/knob-specular",
+  "/docs/components/pitch-bend-wheel/page": "/docs/components/pitch-bend-wheel",
+  "/docs/installation/page": "/docs/installation",
+  "/docs/components/preset-browser/page": "/docs/components/preset-browser",
+  "/docs/introduction/page": "/docs/introduction",
+  "/docs/components/slider-ethereal/page": "/docs/components/slider-ethereal",
+  "/page": "/",
+  "/examples/page": "/examples"
+}
