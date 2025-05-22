@@ -34,6 +34,36 @@ export default function IntroductionPage() {
           <li>Audio Software Creators: If you're developing audio software for the web, these components provide ready-made solutions for common audio interface needs.</li>
         </ul>
 
+        <h2 className="text-2xl font-light tracking-wide mt-8 mb-4">Installation</h2>
+        
+        <p className="text-white/80 mb-4">
+          AudioUI is available as an npm package. You can install it using npm, yarn, or pnpm:
+        </p>
+        
+        <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-md p-3 mb-6">
+          <code className="text-green-400 font-mono">npm install audioui</code>
+        </div>
+        
+        <p className="text-white/80 mb-4">
+          Or using yarn:
+        </p>
+        
+        <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-md p-3 mb-6">
+          <code className="text-green-400 font-mono">yarn add audioui</code>
+        </div>
+        
+        <p className="text-white/80 mb-4">
+          Or using pnpm:
+        </p>
+        
+        <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-md p-3 mb-6">
+          <code className="text-green-400 font-mono">pnpm add audioui</code>
+        </div>
+        
+        <p className="text-white/80 mb-6">
+          You can also check out the <a href="https://github.com/profmitchell/AudioUI" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">GitHub repository</a> for more information and to contribute to the project.
+        </p>
+
         <h2 className="text-2xl font-light tracking-wide mt-8 mb-4">How to Use This Documentation</h2>
         
         <p className="text-white/80">
@@ -43,8 +73,8 @@ export default function IntroductionPage() {
         <ul className="space-y-2 text-white/80">
           <li>Navigation: The documentation is organized into sections, so you can navigate through the sidebar to locate the information you need.</li>
           <li>Component Examples: Each component page includes examples and code snippets that you can copy and adapt for your projects.</li>
-          <li>AudioUI Studio: Try out components in our interactive <a href="/studio" className="text-white underline hover:text-white/80">AudioUI Studio</a> to experiment with different settings and configurations.</li>
-          <li>Installation Guide: Start with the <a href="/docs/installation" className="text-white underline hover:text-white/80">installation page</a> to set up AudioUI in your project.</li>
+          <li>Installation Guide: For more detailed setup instructions, visit the <a href="/docs/installation" className="text-white underline hover:text-white/80">installation page</a>.</li>
+          <li>API Reference: Each component page includes a detailed API reference section.</li>
         </ul>
 
         <h2 className="text-2xl font-light tracking-wide mt-8 mb-4">About Cohen Concepts</h2>

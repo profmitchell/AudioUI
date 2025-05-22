@@ -1,13 +1,22 @@
 # AudioUI
 
-![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)
-![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)
+[![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)](https://www.npmjs.com/package/audioui)
+[![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)](https://github.com/profmitchell/AudioUI/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/github/stars/profmitchell/AudioUI?style=social)](https://github.com/profmitchell/AudioUI)
 
 Modern, accessible audio interface components for React applications
 
+## Installation
 
+```bash
+npm install audioui
+# or
+yarn add audioui
+# or
+pnpm add audioui
+```
 
-
+[View Documentation](https://profmitchell.github.io/AudioUI/)
 
 ## Overview
 
@@ -21,16 +30,6 @@ AudioUI is a comprehensive library of React components specifically designed for
 - ♿ **Accessible**: ARIA-compliant components with keyboard navigation
 - 🎨 **Customizable**: Easily themeable to match your application's design
 - ⚡ **Optimized**: High-performance components with minimal re-renders
-
-## Installation
-
-```bash
-npm install audioui
-# or
-yarn add audioui
-# or
-pnpm add audioui
-```
 
 ## Quick Start
 
