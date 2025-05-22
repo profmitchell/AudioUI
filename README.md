@@ -1,5 +1,3 @@
-<div align="center">
-
 # AudioUI
 
 ### Modern, accessible audio interface components for React applications
@@ -7,13 +5,13 @@
 [![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)](https://www.npmjs.com/package/audioui)
 [![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)](https://github.com/profmitchell/AudioUI/blob/main/LICENSE)
 [![GitHub](https://img.shields.io/github/stars/profmitchell/AudioUI?style=social)](https://github.com/profmitchell/AudioUI)
-<div align="center">
-  <img width="600" alt="AudioUI Overview" src="https://github.com/user-attachments/assets/2e36a122-af19-453d-af62-f96e3b3852d8" />
 
-  <a href="https://profmitchell.github.io/AudioUI/">Documentation</a> | 
-  <a href="https://profmitchell.github.io/AudioUI/docs/components/knob">Components</a> | 
-  <a href="https://github.com/profmitchell/AudioUI">GitHub</a>
-</div>
+<img width="600" alt="AudioUI Overview" src="https://github.com/user-attachments/assets/2e36a122-af19-453d-af62-f96e3b3852d8" />
+
+<a href="https://profmitchell.github.io/AudioUI/">Documentation</a> | 
+<a href="https://profmitchell.github.io/AudioUI/docs/components/knob">Components</a> | 
+<a href="https://github.com/profmitchell/AudioUI">GitHub</a>
+    
 
 ## 🎛️ What is AudioUI?
 

@@ -24,6 +24,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="AudioUI" />
+        <meta name="apple-mobile-web-app-title" content="AudioUI" />
+        <link rel="icon" sizes="192x192" href="/icon-192.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="/splash.png" />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased bg-gradient-to-b from-black to-zinc-900 min-h-screen overflow-x-hidden no-horizontal-scroll`}

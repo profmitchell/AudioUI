@@ -188,10 +188,20 @@ select:focus-visible {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Enhanced mobile responsiveness */
+/* Mobile App Styling */
 @media (max-width: 640px) {
+  /* App overscroll behavior */
+  body {
+    overscroll-behavior: none; /* Prevent bounce effect on iOS */
+    touch-action: manipulation; /* Prevent double-tap zoom */
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
+    user-select: none; /* Prevent text selection for app-like feel */
+  }
+
+  /* App-like typography */
   h1 {
     @apply text-2xl;
+    margin-bottom: 1rem;
   }
 
   h2 {
@@ -202,21 +212,32 @@ select:focus-visible {
     @apply text-lg;
   }
 
+  /* Compact containers */
   .container {
     @apply px-4;
+    max-width: 100% !important;
   }
 
+  /* App-like cards */
   .glass {
-    @apply rounded-md;
+    @apply rounded-lg;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
 
-  /* Improve touch targets for mobile */
+  /* App-like buttons */
   button,
   .sidebar-item,
   a.sidebar-item {
-    min-height: 48px; /* Increased from 44px for better touch targets */
+    min-height: 52px; /* Larger touch targets */
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  button:active, a:active {
+    transform: scale(0.96);
+    transition: transform 0.1s ease;
   }
 
   /* Fix for small screens */
@@ -229,11 +250,20 @@ select:focus-visible {
     @apply text-sm;
     max-width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
   /* Enhance mobile layout for feature cards */
   .feature-card {
     @apply p-4; /* Less padding on mobile */
+  }
+
+  /* Mobile app-like navbar */
+  .top-nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 
   /* Fix font sizes for mobile */
@@ -243,14 +273,34 @@ select:focus-visible {
 
   /* Optimize spacing */
   .py-20 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Mobile app-like animations */
+  .transition-all {
+    transition-duration: 0.2s !important;
+  }
+
+  /* Hide scrollbars for app-like feel */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    display: none;
   }
   
   /* Improve code display */
   code {
     word-break: break-word;
     white-space: pre-wrap;
+    background: rgba(0,0,0,0.3);
+    padding: 0.5rem;
+    border-radius: 6px;
+  }
+
+  /* App-like bottom spacing */
+  footer {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
   }
 }
 
