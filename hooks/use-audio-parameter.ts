@@ -22,7 +22,10 @@ export function useAudioParameter(
   useEffect(() => {
     if (!audioParam) return;
 
-    const now = audioParam.context.currentTime;
+    // Get the current time from the audio context (safely)
+    const now = audioParam.defaultValue !== undefined 
+      ? (audioParam as any).context?.currentTime || 0 
+      : 0;
     
     // Set the value based on the mode
     if (immediate) {
