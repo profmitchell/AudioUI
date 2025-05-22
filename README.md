@@ -236,6 +236,10 @@ AudioUI is [MIT licensed](https://github.com/profmitchell/AudioUI/blob/main/LICE
 [Cohen Concepts](https://cohen-concepts.com) - Building the future of audio software interfaces.
 [Mitchell Cohen](https://college.berklee.edu/electronic-production-design/faculty/mitchell-cohen) - Professor of Electronic Music Production and Sound Design at Berklee College of Music in Boston. 
 
+## 🙏 Acknowledgements
+
+AudioUI is built on the foundation of [shadcn/ui](https://ui.shadcn.com/), a collection of re-usable components built using Radix UI and Tailwind CSS. We extend our gratitude to the shadcn/ui team for their excellent work that made this project possible.
+
 ---
 
 <div align="center">

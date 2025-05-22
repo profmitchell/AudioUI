@@ -1,6 +1,6 @@
 {
   "name": "audioui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Modern, accessible audio UI components for React applications",
   "license": "MIT",
