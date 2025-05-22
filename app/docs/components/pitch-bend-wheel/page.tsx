@@ -21,10 +21,10 @@ export default function DocsPage() {
   }
 
   const installCommands = {
-    pnpm: "pnpm add @cohen-concepts/audio-ui",
-    npm: "npm install @cohen-concepts/audio-ui",
-    yarn: "yarn add @cohen-concepts/audio-ui",
-    bun: "bun add @cohen-concepts/audio-ui",
+    pnpm: "pnpm add audioui",
+    npm: "npm i audioui",
+    yarn: "yarn add audioui",
+    bun: "bun add audioui",
   }
 
   return (

@@ -22,12 +22,12 @@ export default function Documentation() {
     setTimeout(() => setCopied(null), 2000)
   }
 
-  const installationCode = `npm install @audioui/rotary-knob`
-  const pnpmCode = `pnpm add @audioui/rotary-knob`
-  const yarnCode = `yarn add @audioui/rotary-knob`
-  const bunCode = `bun add @audioui/rotary-knob`
+  const installationCode = `npm i audioui`
+  const pnpmCode = `pnpm add audioui`
+  const yarnCode = `yarn add audioui`
+  const bunCode = `bun add audioui`
 
-  const importCode = `import { RotaryKnobDetailed } from "@audioui/rotary-knob"`
+  const importCode = `import { RotaryKnobDetailed } from "audioui"`
 
   const basicUsageCode = `<RotaryKnobDetailed
   value={0.5}
@@ -202,7 +202,7 @@ return (
 
               <div className="relative">
                 <pre className="bg-black rounded-md p-4 overflow-x-auto text-white/80 font-mono text-sm">
-                  <code>pnpm add @audioui/rotary-knob</code>
+                  <code>pnpm add audioui</code>
                 </pre>
                 <Button
                   variant="ghost"

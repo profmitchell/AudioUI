@@ -30,11 +30,11 @@ export default function GraphXYPage() {
     setTimeout(() => setCopied(null), 2000)
   }
 
-  const pnpmCode = `pnpm add @audioui/xy-pad`
-  const npmCode = `npm install @audioui/xy-pad`
-  const yarnCode = `yarn add @audioui/xy-pad`
-  const bunCode = `bun add @audioui/xy-pad`
-  const importCode = `import { XYPad } from "@audioui/xy-pad"`
+  const pnpmCode = `pnpm add audioui`
+  const npmCode = `npm i audioui`
+  const yarnCode = `yarn add audioui`
+  const bunCode = `bun add audioui`
+  const importCode = `import { XYPad } from "audioui"`
   const usageCode = `<XYPad x={x} y={y} onChange={handleChange} width={300} height={300} showGrid={true} />`
 
   return (
