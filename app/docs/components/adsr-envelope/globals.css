@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chart-1: 0 0% 100%;
+  --chart-2: 240 5% 65%;
+  --chart-3: 240 5% 40%;
+  --chart-4: 240 5% 25%;
+}
+
+body {
+  background: linear-gradient(to bottom, #000000, #0a0a0a);
+  color: white;
+  min-height: 100vh;
+}
+
+.glass-container {
+  background-color: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
