@@ -136,13 +136,6 @@ export function SiteSidebar() {
                   isActive={isActive("/docs/introduction")}
                   isCollapsed={sidebarCollapsed}
                 />
-                <NavItem
-                  href="/docs/installation"
-                  icon={Settings}
-                  label="Installation"
-                  isActive={isActive("/docs/installation")}
-                  isCollapsed={sidebarCollapsed}
-                />
               </nav>
             </div>
 
