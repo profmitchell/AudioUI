@@ -214,14 +214,43 @@ select:focus-visible {
   button,
   .sidebar-item,
   a.sidebar-item {
-    min-height: 44px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    min-height: 48px; /* Increased from 44px for better touch targets */
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  /* Fix for small screens */
+  .showcase-item {
+    min-width: 80px; /* Smaller size on mobile */
   }
 
   /* Adjust component examples for mobile */
   .prose pre {
     @apply text-sm;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* Enhance mobile layout for feature cards */
+  .feature-card {
+    @apply p-4; /* Less padding on mobile */
+  }
+
+  /* Fix font sizes for mobile */
+  .text-5xl {
+    font-size: 2.5rem !important;
+  }
+
+  /* Optimize spacing */
+  .py-20 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Improve code display */
+  code {
+    word-break: break-word;
+    white-space: pre-wrap;
   }
 }
 

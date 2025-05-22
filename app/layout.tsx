@@ -22,8 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
       <body
-        className={`${inter.variable} font-sans antialiased bg-gradient-to-b from-black to-zinc-900 min-h-screen overflow-x-hidden`}
+        className={`${inter.variable} font-sans antialiased bg-gradient-to-b from-black to-zinc-900 min-h-screen overflow-x-hidden no-horizontal-scroll`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <LayoutProvider>

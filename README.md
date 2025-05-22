@@ -1,14 +1,24 @@
+<div align="center">
+
 # AudioUI
+
+### Modern, accessible audio interface components for React applications
 
 [![npm version](https://img.shields.io/npm/v/audioui.svg?style=flat)](https://www.npmjs.com/package/audioui)
 [![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)](https://github.com/profmitchell/AudioUI/blob/main/LICENSE)
 [![GitHub](https://img.shields.io/github/stars/profmitchell/AudioUI?style=social)](https://github.com/profmitchell/AudioUI)
 <div align="center">
   <img width="600" alt="AudioUI Overview" src="https://github.com/user-attachments/assets/2e36a122-af19-453d-af62-f96e3b3852d8" />
+
+  <a href="https://profmitchell.github.io/AudioUI/">Documentation</a> | 
+  <a href="https://profmitchell.github.io/AudioUI/docs/components/knob">Components</a> | 
+  <a href="https://github.com/profmitchell/AudioUI">GitHub</a>
 </div>
 
+## 🎛️ What is AudioUI?
 
-Modern, accessible audio interface components for React applications
+AudioUI is a comprehensive library of React components specifically designed for audio applications, digital audio workstations (DAWs), synthesizers, and music production tools. It provides professionally crafted UI elements with modern design principles and full accessibility support.
+
 ## Component Gallery
 
 
@@ -21,15 +31,20 @@ Modern, accessible audio interface components for React applications
 </div>
 
 
-## Installation
+## 📦 Installation
 
 ```bash
+# npm
 npm install audioui
-# or
+
+# yarn
 yarn add audioui
-# or
+
+# pnpm
 pnpm add audioui
 ```
+
+AudioUI is compatible with React 18+ and works with frameworks like Next.js, Vite, and Create React App.
 
 [View Documentation](https://profmitchell.github.io/AudioUI/)
 
@@ -37,14 +52,15 @@ pnpm add audioui
 
 AudioUI is a comprehensive library of React components specifically designed for audio applications, digital audio workstations (DAWs), synthesizers, and other music production tools. It provides professionally crafted UI elements common in music software with modern design principles and full accessibility support.
 
-## Features
+## ✨ Key Features
 
 - 🎛️ **Professional Audio Controls**: Knobs, faders, XY pads, and other audio-specific UI components
 - 🎹 **MIDI Integration**: Built-in MIDI support for components like drum pads and keyboards
-- 📱 **Responsive**: Fully responsive components that work across devices
-- ♿ **Accessible**: ARIA-compliant components with keyboard navigation
-- 🎨 **Customizable**: Easily themeable to match your application's design
-- ⚡ **Optimized**: High-performance components with minimal re-renders
+- 📱 **Responsive**: Fully responsive components that work across desktop and mobile devices
+- ♿ **Accessible**: ARIA-compliant components with keyboard navigation and screen reader support
+- 🎨 **Customizable**: Easily themeable to match your application's design system
+- ⚡ **Optimized**: High-performance components with minimal re-renders for low-latency audio applications
+- 🔌 **Framework Agnostic**: Works with any React-based project, including Next.js, Remix, and more
 
 ## Quick Start
 
@@ -83,48 +99,147 @@ function MySynthUI() {
 }
 ```
 
-## Component Documentation
+## 📚 Component Documentation
 
 ### Core Components
 
-- **Dial/Knob** - Rotary control for parameters
-- **Slider** - Linear control for parameters
-- **XY Pad** - Two-dimensional control surface
-- **ADSR Envelope** - Attack, Decay, Sustain, Release envelope editor
-- **MIDI Pad** - Trigger pad for MIDI notes
-- **Pitch Bend** - Vertical/horizontal pitch bend control
-- **Mod Wheel** - Modulation wheel control
+| Component | Description | Documentation |
+|-----------|-------------|---------------|
+| **Dial/Knob** | Rotary control for parameters | [View docs](https://profmitchell.github.io/AudioUI/docs/components/knob) |
+| **Knob Specular** | Photorealistic knob with specular highlights | [View docs](https://profmitchell.github.io/AudioUI/docs/components/knob-specular) |
+| **Slider - Ethereal** | Linear control with ethereal visual style | [View docs](https://profmitchell.github.io/AudioUI/docs/components/slider-ethereal) |
+| **XY Pad** | Two-dimensional control surface | [View docs](https://profmitchell.github.io/AudioUI/docs/components/XYPad) |
+| **ADSR Envelope** | Attack, Decay, Sustain, Release envelope editor | [View docs](https://profmitchell.github.io/AudioUI/docs/components/adsr-envelope) |
+| **Pitch Bend Wheel** | Vertical/horizontal pitch bend control | [View docs](https://profmitchell.github.io/AudioUI/docs/components/pitch-bend-wheel) |
+| **Modulation Wheel** | Modulation wheel control | [View docs](https://profmitchell.github.io/AudioUI/docs/components/modulation-wheel) |
+| **Meter - Arc** | Circular level meter display | [View docs](https://profmitchell.github.io/AudioUI/docs/components/meter-arc) |
 
-### UI Helper Components
+### Additional Components
 
 - **MIDI Provider** - Context provider for MIDI functionality
-- **Custom Slider** - Enhanced slider with specialized audio features
-- **Negative Slider** - Slider with support for negative values
+- **Filter Display** - Visual representation of filter curves
+- **Drum Pad** - Trigger pad for percussion samples
+- **Preset Browser** - Interface for managing and selecting presets
 
-## Examples and Documentation
+## 🔧 Advanced Usage
 
-Visit our [documentation site](https://github.com/profmitchell/AudioUI) for comprehensive examples, API reference, and usage guidelines.
+### Theme Customization
 
-## Contributing
+AudioUI components can be customized to match your application's theme:
 
-We welcome contributions! Please see our [contributing guidelines](https://github.com/profmitchell/AudioUI/blob/main/CONTRIBUTING.md) for details.
+```jsx
+<Dial 
+  value={50}
+  size="lg"
+  trackColor="rgba(0,0,0,0.2)"
+  indicatorColor="#6366f1"
+  variant="flat"
+  showValue={true}
+  valueFormatter={(v) => `${v}%`}
+/>
+```
 
-## License
+### Integration with Web Audio API
+
+```jsx
+import { useEffect, useRef } from 'react';
+import { Dial } from 'audioui';
+
+function AudioProcessor() {
+  const audioContextRef = useRef(null);
+  const filterRef = useRef(null);
+  
+  useEffect(() => {
+    audioContextRef.current = new AudioContext();
+    filterRef.current = audioContextRef.current.createBiquadFilter();
+    // Additional audio setup...
+  }, []);
+  
+  const handleFilterChange = (value) => {
+    if (filterRef.current) {
+      filterRef.current.frequency.value = value * 100;
+    }
+  };
+  
+  return (
+    <div>
+      <h3>Filter Frequency</h3>
+      <Dial
+        min={20}
+        max={20000}
+        value={1000}
+        onChange={handleFilterChange}
+        logScale={true}
+      />
+    </div>
+  );
+}
+```
+
+## 📂 Project Structure
+
+```
+/
+├── components/
+│   ├── ui/                 # Core UI components
+│   │   ├── dial.tsx        # Rotary knob component
+│   │   ├── adsr-envelope.tsx
+│   │   ├── XYPad.tsx
+│   │   └── ...
+│   ├── site-sidebar.tsx    # Documentation site components
+│   └── ...
+├── app/
+│   ├── docs/               # Documentation pages
+│   │   ├── components/     # Component documentation
+│   │   ├── installation/   # Installation guide
+│   │   └── introduction/   # Introduction to AudioUI
+│   └── ...
+└── ...
+```
+
+## 🤝 Contributing
+
+We welcome contributions to AudioUI! Whether it's new components, bug fixes, or documentation improvements.
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add some amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+Please see our [contributing guidelines](https://github.com/profmitchell/AudioUI/blob/main/CONTRIBUTING.md) for more details.
+
+## 🔄 Development Workflow
+
+```bash
+# Clone the repository
+git clone https://github.com/profmitchell/AudioUI.git
+cd AudioUI
+
+# Install dependencies
+pnpm install
+
+# Start the development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Deploy to GitHub Pages
+pnpm deploy:pages
+```
+
+## 📝 License
 
 AudioUI is [MIT licensed](https://github.com/profmitchell/AudioUI/blob/main/LICENSE).
 
-## Documentation Structure
+## 🏢 Created By
 
-The documentation is organized as follows:
+[Cohen Concepts](https://cohen-concepts.com) - Building the future of audio software interfaces.
+[Mitchell Cohen](https://college.berklee.edu/electronic-production-design/faculty/mitchell-cohen) - Professor of Electronic Music Production and Sound Design at Berklee College of Music in Boston. 
 
-- `/app/docs/introduction` - Introduction to AudioUI
-- `/app/docs/installation` - Installation instructions
-- `/app/docs/components` - Documentation for individual components
+---
 
-## Components
-
-All UI components are located in the `/components/ui` directory. These components are imported and showcased in the documentation pages.
-
-## Created By
-
-[Cohen Concepts](https://cohen-concepts.com)
+<div align="center">
+Made with ❤️ for audio developers and music enthusiasts.
+</div>

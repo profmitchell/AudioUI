@@ -69,7 +69,7 @@ export default function HomePage() {
             >
               <Button
                 size="lg"
-                className="bg-white/10 backdrop-blur-md border border-white/10 text-white hover:bg-white/20 hover:text-white glass"
+                className="bg-white/10 backdrop-blur-md border border-white/10 text-white hover:bg-white/20 hover:text-white glass w-full sm:w-auto min-h-[50px]"
                 asChild
               >
                 <Link href="/docs/introduction">Get Started</Link>
@@ -77,7 +77,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/10 text-white hover:bg-white/10 hover:text-white"
+                className="border-white/10 text-white hover:bg-white/10 hover:text-white w-full sm:w-auto min-h-[50px]"
                 asChild
               >
                 <Link href="https://github.com/profmitchell/AudioUI" target="_blank" rel="noopener noreferrer">
