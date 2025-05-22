@@ -1,0 +1,22 @@
+# Source files and build artifacts
+.next/
+node_modules/
+app/
+public/
+
+# Config files
+.gitignore
+tsconfig.json
+next.config.mjs
+tailwind.config.ts
+postcss.config.mjs
+components.json
+
+# Scripts
+setup-docs.sh
+
+# Docs specific files
+README.md
+
+# macOS specific files
+.DS_Store
