@@ -6,7 +6,7 @@ Modern, accessible audio interface components for React applications
 [![MIT License](https://img.shields.io/github/license/profmitchell/AudioUI)](https://github.com/profmitchell/AudioUI/blob/main/LICENSE)
 [![GitHub](https://img.shields.io/github/stars/profmitchell/AudioUI?style=social)](https://github.com/profmitchell/AudioUI)
 
-<img width="600" alt="AudioUI Overview" src="https://github.com/user-attachments/assets/2e36a122-af19-453d-af62-f96e3b3852d8" />
+  <img width="600" alt="AudioUI Overview" src="https://github.com/user-attachments/assets/2e36a122-af19-453d-af62-f96e3b3852d8" />
 
 <a href="https://profmitchell.github.io/AudioUI/">Documentation</a> | 
 <a href="https://profmitchell.github.io/AudioUI/docs/components/knob">Components</a> | 
