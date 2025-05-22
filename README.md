@@ -5,6 +5,10 @@
 
 Modern, accessible audio interface components for React applications
 
+
+
+
+
 ## Overview
 
 AudioUI is a comprehensive library of React components specifically designed for audio applications, digital audio workstations (DAWs), synthesizers, and other music production tools. It provides professionally crafted UI elements common in music software with modern design principles and full accessibility support.
